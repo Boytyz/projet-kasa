@@ -1,0 +1,27 @@
+.banner_ap {
+    width: 100%;
+    height: 223px;
+    margin: 3rem auto;
+    border-radius: 25px;
+    background-image: url(../../assets/images/banner_apropos.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+@media (max-width: 420px) {
+    .banner_ap {
+        width: 336px;
+        height: 223px;
+        background-image: url(../../assets/images/gustavo-alves-mob.png);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner_ap {
+        width: 280px;
+    }
+}

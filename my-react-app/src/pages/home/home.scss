@@ -1,0 +1,29 @@
+@import '../../styles/utils/variable';
+
+.home {
+  padding: $spacing-xl 0;
+  
+  @include mobile {
+    padding: $spacing-md 0;
+  }
+  
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: $spacing-xl;
+    background-color: $secondary-color;
+    border-radius: $border-radius-lg;
+    padding: $spacing-xl;
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+      background-color: transparent;
+      padding: 0;
+    }
+    
+    @media screen and (max-width: 400px) {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+}
