@@ -1,8 +1,28 @@
+.banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .banner {
+    position: relative;
     width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
     height: auto;
     margin: 3rem auto;
     border-radius: 25px;
+}
+
+.banner-about {
+    width: 100%;
+    height: 223px;
+    margin: 3rem auto;
+    border-radius: 25px;
+    background-image: url(../../assets/images/banner_apropos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .banner img {
@@ -13,10 +33,38 @@
     filter: brightness(100%);
 }
 
+.banner-image {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.banner-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 .overlay,
 .overlay-gradient {
     position: relative;
     border-radius: 25px;
+    height: 100%;
 }
 
 .overlay:before,
@@ -51,6 +99,9 @@
     z-index: 1;
     font-size: 3rem;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .overlay-secondary::before {
@@ -66,11 +117,25 @@
         margin: 0.8rem auto;
     }
 
+    .banner-about {
+        width: 336px;
+        height: 223px;
+        background-image: url(../../assets/images/gustavo-alves-mob.png);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+
     .banner img {
         width: 100%;
         height: 111px;
-        -o-object-position: 80% 50%;
         object-position: center bottom;
+        border-radius: 10px;
+    }
+
+    .banner-image {
         border-radius: 10px;
     }
 
@@ -92,9 +157,28 @@
     }
 }
 
+@media (max-width: 420px) {
+    .banner-about {
+        width: 336px;
+        height: 223px;
+        background-image: url(../../assets/images/gustavo-alves-mob.png);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 375px) {
     .overlay-content {
         font-size: 19px;
         font-weight: 500;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner-about {
+        width: 280px;
     }
 }

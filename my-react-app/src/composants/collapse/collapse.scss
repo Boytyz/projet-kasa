@@ -1,0 +1,53 @@
+// src/components/Collapse/Collapse.scss
+.collapse {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: none;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
+        padding: 0px 20px;
+        cursor: pointer;
+        color: white;
+        background-color: #FF6060;
+        transition: background-color 0.3s ease;
+
+        h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+
+    &-arrow {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, background-color 0.3s;
+        background-color: #F6F6F673;
+
+        &.open {
+            max-height: 1000px;
+            background-color: #F6F6F673;
+        }
+
+        &-inner {
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+}

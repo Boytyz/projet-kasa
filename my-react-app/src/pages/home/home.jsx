@@ -17,7 +17,9 @@ useEffect(() => {
 
   return (
     <div className="home">
-      <Banner />
+      <Banner 
+      imageUrl="/assets/banner_acceuil.png" 
+        title="Chez vous et partout ailleurs"/>
       <Habitations element={data} />
     </div>
   );

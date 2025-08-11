@@ -3,18 +3,20 @@ import './card.scss';
 
 const Card = ({ element }) => {
   return (
-    <div className="card">
-      <img className="card-img-top" src={element.cover} alt={element.title} />
-      <Link
-        key={element.index}
-        to={`/Fiche/${element.id}`}
-        state={{ element: element }}
-      >
+    <Link
+      key={element.index}
+      to={`/Fiche/${element.id}`}
+      state={{ element: element }}
+      className="card-link"
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
+      <div className="card">
+        <img className="card-img-top" src={element.cover} alt={element.title} />
         <div className="card-img-overlay">
           <p className="text-left">{element.title}</p>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
