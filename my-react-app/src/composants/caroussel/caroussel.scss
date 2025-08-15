@@ -16,20 +16,16 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.5);
         border: none;
-        border-radius: 50%;
         width: 46px;
-        height: 46px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         z-index: 1;
+        background-color: transparent;
 
-        &:hover {
-            background: rgba(255, 255, 255, 0.8);
-        }
 
         &--left {
             left: 24px;
@@ -37,6 +33,12 @@
 
         &--right {
             right: 24px;
+        }
+
+        i {
+            font-size: 5.0rem;
+            color: white;
+            pointer-events: none;
         }
     }
 

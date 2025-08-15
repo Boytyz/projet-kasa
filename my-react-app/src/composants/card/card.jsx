@@ -5,7 +5,7 @@ const Card = ({ element }) => {
   return (
     <Link
       key={element.index}
-      to={`/Fiche/${element.id}`}
+      to={`/fiches/${element.id}`}
       state={{ element: element }}
       className="card-link"
       style={{ textDecoration: 'none', color: 'inherit' }}

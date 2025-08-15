@@ -1,0 +1,100 @@
+// fiches.scss
+.fiches {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Montserrat', sans-serif;
+
+    &__loading {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 24px;
+        color: #FF6060;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__details {
+        flex: 1;
+        max-width: 60%;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    /* Styles spécifiques demandés */
+    &__title {
+        font-size: 36px;
+        color: #FF6060;
+        margin: 20px 0 10px 0;
+        font-weight: 500;
+        line-height: 1.2;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+
+    &__location {
+        font-size: 18px;
+        color: #FF6060;
+        margin: 0 0 20px 0;
+        font-weight: 400;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    &__tag {
+        background-color: #FF6060;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    /* Fin des styles spécifiques */
+
+    &__host-rating {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        flex: 1;
+    }
+
+    &__collapses {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__collapse {
+        flex: 1;
+    }
+}

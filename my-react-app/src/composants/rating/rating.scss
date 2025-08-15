@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+
+    .fa-star {
+        color: #ff6060;
+        font-size: 1.5rem;
+
+        &.active {
+            color: #ff6060;
+        }
+    }
+}
