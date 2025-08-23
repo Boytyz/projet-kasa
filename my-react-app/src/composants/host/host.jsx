@@ -1,7 +1,8 @@
 import React from 'react';
 import './Host.scss';
+import Rating from '../rating/rating';
 
-const Host = ({ name, picture, rating }) => {
+const Host = ({ name, picture }) => {
   return (
     <div className="host">
       <div className="host__info">
@@ -12,7 +13,6 @@ const Host = ({ name, picture, rating }) => {
           className="host__picture"
         />
       </div>
-      {rating && <Rating rating={rating} />}
     </div>
   );
 };

@@ -25,3 +25,25 @@
         border: 1px solid #ff6060;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .host {
+        gap: 10px;
+
+        &__info {
+            gap: 8px;
+            margin-top: 0;
+        }
+
+        &__name {
+            font-size: 0.75rem;
+            line-height: 1.2;
+            max-width: 80px;
+        }
+
+        &__picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

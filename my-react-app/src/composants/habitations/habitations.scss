@@ -6,15 +6,27 @@
     margin: 0 auto;
     border-radius: 25px;
     background-color: #f6f6f6;
-    padding: 0px;
     justify-content: space-around;
+    gap: 20px;
 }
 
 @media (max-width: 912px) {
     .habitations {
         background-color: #ffffff;
-        padding: 1rem;
-        justify-content: space-around;
+        justify-content: center;
         border-radius: 10px;
+        gap: 22px;
+    }
+}
+
+@media (max-width: 375px) {
+    .habitations {
+        background-color: #ffffff;
+        padding: 0;
+        justify-content: center;
+        border-radius: 0;
+        gap: 22px;
+        max-width: 335px;
+        margin: 22px auto 0 auto;
     }
 }

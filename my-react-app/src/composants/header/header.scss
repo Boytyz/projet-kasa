@@ -1,29 +1,101 @@
+.header {
+    width: 100%;
+}
+
 .header_container {
     display: flex;
     margin-top: 2rem;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
-    margin-left: auto;
-    margin-right: auto; // centre le header horizontalement sur la page
-    /* ou simplement : margin: 2rem auto 0 auto; */
+    max-width: 1240px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.header__logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.header_nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header_nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+
+.header_nav a.active {
+    text-decoration: underline;
+}
+
+// Responsive design - aligné avec banner
+@media screen and (max-width: 820px) {
+    .header_container {
+        width: 100%;
+        padding: 0 20px;
+        margin: 1rem auto;
+    }
 
     .header_nav {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
+        gap: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
 
-
+@media screen and (max-width: 425px) {
+    .header_container {
+        max-width: 335px;
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .header_nav a {
-        color: #000;
-        text-decoration: none;
-        font-weight: 500;
-        transition: text-decoration 0.2s;
+    .header__logo img {
+        max-width: 120px;
     }
 
-    .header_nav a.active {
-        text-decoration: underline;
+    .header_nav {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header_container {
+        width: 335px;
+        max-width: 335px;
+        padding: 0;
+        margin: 22px auto;
+    }
+
+    .header__logo img {
+        max-width: 120px;
+    }
+
+    .header_nav {
+        gap: 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header_container {
+        width: 280px;
+        max-width: 280px;
+    }
+
+    .header__logo img {
+        max-width: 100px;
+    }
+
+    .header_nav {
+        gap: 0.8rem;
+        font-size: 0.8rem;
     }
 }

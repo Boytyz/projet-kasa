@@ -12,3 +12,14 @@
         }
     }
 }
+
+@media screen and (max-width: 425px) {
+    .rating {
+        gap: 3px;
+        margin-top: 0;
+
+        .fa-star {
+            font-size: 0.9rem;
+        }
+    }
+}
