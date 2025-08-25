@@ -1,6 +1,6 @@
 import React from 'react';
 import './Host.scss';
-import Rating from '../rating/rating';
+
 
 const Host = ({ name, picture }) => {
   return (

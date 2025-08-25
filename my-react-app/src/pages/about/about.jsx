@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../../composants/banner/banner';
 import Collapse from '../../composants/collapse/collapse';
 import './about.scss'; 
-import { aboutData } from '../../data/aboutdata.jsx'; 
+import aboutData from '../../data/aboutdata.json'; 
 const About = () => {
   return (
     <div>

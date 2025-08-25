@@ -6,13 +6,12 @@ import Banner from '../../composants/banner/banner';
 function Home() {
   const [data, setData] = useState([]);
   
-useEffect(() => {
-  
-  fetch("logements.json")
-    .then((res) => res.json())
-    .then((data) => setData(data))
-    .catch((error) => console.log(error));
-}, []);
+  useEffect(() => {
+    fetch("/logements.json")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((error) => console.log(error));
+  }, []);
 
 
   return (

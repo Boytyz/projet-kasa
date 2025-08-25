@@ -5,7 +5,7 @@ import Collapse from '../../composants/collapse/collapse';
 import Host from '../../composants/host/host';
 import Rating from '../../composants/rating/rating';
 import './fiches.scss';
-import logementsData from '../../../logements.json';
+import logementsData from '../../data/logements.json';
 
 const Fiches = () => {
   const { id } = useParams();
